@@ -14,24 +14,5 @@ To view and search the full list of Apps, head over to the [Nautobot App Ecosyst
  Aid in discovering what's available - a short list with one-liner descriptions of what they do.
 ```
 
-### With documentation here
-
-| | App Name | Description |
-|-| --- | --- |
-| ![](_static/img/icon-DeviceOnboarding.png) | [Nautobot Device Onboarding](https://nba-test-main.readthedocs.io/projects/nautobot-plugin-device-onboarding/) | Simplify the onboarding process of a new device by allowing the user to specify a small amount of info and having the plugin populate a much larger amount of device data in Nautobot. |
-| ![](_static/img/icon-GoldenConfiguration.png) | [Nautobot Golden Configuration](https://nba-test-main.readthedocs.io/projects/nautobot-plugin-golden-config/) | Automate configuration backups, perform configuration compliance, and generate intended configurations. |
-
-
-### With documentation elsewhere
-
-```{admonition} Developer Note - Remove Me!
-Manually curated list of other apps that are:
-1. Not migrated yet to the new docs system.
-2. Built by others in the community.
-Should be reviewed periodically to ensure projects are not abandoned, links still work (this can be automated in CI) etc.
-```
-
-| | App Name | Description |
-|-| --- | --- |
-| ![](_static/img/icon-DeviceLifecycle.png)    | [Nautobot Device Lifecycle Management](https://github.com/nautobot/nautobot-plugin-device-lifecycle-mgmt) | This App works by making related associations to Devices, Device Types, and Inventory Items to help provide data about the hardware end of life notices, appropriate software versions to be running on the devices, and the maintenance contracts associated with devices. |
-| ![](_static/img/icon-SSoT.png) | [Nautobot Single Source of Truth (SSoT)](https://github.com/nautobot/nautobot-plugin-ssot)  | This app facilitates integration and data synchronization between various "source of truth" (SoT) systems, with Nautobot acting as a central clearinghouse for data - a Single Source of Truth|
+- [Docs Hosted Here](apps-docs-here.md)
+- [Docs Elsewhere](apps-docs-elsewhere.md)

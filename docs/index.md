@@ -13,4 +13,6 @@ You can also find links to the core Nautobot documentation and other Nautobot re
 ```{toctree}
 :maxdepth: 2
 Nautobot App Ecosystem <nautobot-apps>
+Docs Hosted Here <apps-docs-here.md>
+Docs Elsewhere <apps-docs-elsewhere.md>
 ```
