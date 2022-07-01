@@ -11,8 +11,8 @@ To view and search the full list of Apps, head over to the [Nautobot App Ecosyst
 ## Existing Apps
 
 ```{admonition} Developer Note - Remove Me!
- Aid in discovering what's available - a short list with one-liner descriptions of what they do.
+Aid in discovering what's available - a short list with one-liner descriptions of what they do.
 ```
 
-- [Docs Hosted Here](apps-docs-here.md)
+- [Docs Hosted Here](index.md)
 - [Docs Elsewhere](apps-docs-elsewhere.md)
