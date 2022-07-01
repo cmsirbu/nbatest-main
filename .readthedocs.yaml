@@ -16,7 +16,7 @@ build:
 
 sphinx:
   builder: html
-  configuration: conf.py
+  configuration: docs/conf.py
   #fail_on_warning: true
 
 # Use our docs/requirements.txt during installation.
