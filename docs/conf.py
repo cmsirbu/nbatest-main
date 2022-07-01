@@ -27,7 +27,8 @@ author = "Network to Code"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "myst_parser"
+    "myst_parser",
+    "sphinx_search.extension"
 ]
 
 # The suffix of source filenames.
