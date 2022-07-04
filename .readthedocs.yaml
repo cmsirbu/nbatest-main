@@ -13,9 +13,8 @@ build:
 
 #formats: all
 
-sphinx:
-  builder: html
-  configuration: docs/conf.py
+mkdocs:
+  configuration: mkdocs.yml
   #fail_on_warning: true
 
 # Use our docs/requirements.txt during installation.
