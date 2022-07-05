@@ -168,6 +168,6 @@ nav:
     - Nautobot Apps:
         - Overview: 'apps/index.md'
         - Hosted App Documentation:
-            - Nautobot Device Onboarding: 'https://nbatest-main.readthedocs.io/projects/device-onboarding/en/latest/'
-            - Nautobot Golden Configuration: 'https://nbatest-main.readthedocs.io/projects/golden-config/en/latest/'
+            - Nautobot Device Onboarding: 'https://nbatest-mm.readthedocs.io/projects/device-onboarding/en/latest/'
+            - Nautobot Golden Configuration: 'https://nbatest-mm.readthedocs.io/projects/golden-config/en/latest/'
         - Nautobot Apps Ecosystem: 'apps/nautobot-apps.md'
