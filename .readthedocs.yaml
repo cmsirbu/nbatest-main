@@ -10,15 +10,6 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.10"
-
-#formats: all
-
-sphinx:
-  builder: html
-  configuration: docs/conf.py
-  #fail_on_warning: true
-
-# Use our docs/requirements.txt during installation.
-python:
-  install:
-    - requirements: docs/requirements.txt
+  commands:
+    - mkdir -p _readthedocs/
+    - cp -r html _readthedocs/
