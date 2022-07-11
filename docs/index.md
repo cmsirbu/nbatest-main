@@ -4,7 +4,7 @@ hide:
 ---
 
 <!-- markdownlint-disable MD041 -->
-![Nautobot](nautobot_logo.svg "Nautobot logo")
+<center><img src="nautobot_logo.svg" alt="Nautobot logo" class="logo"></center>
 <!-- markdownlint-enable MD041 -->
 
 # What is Nautobot?

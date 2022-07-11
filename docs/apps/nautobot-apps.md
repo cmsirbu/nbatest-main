@@ -1,9 +1,6 @@
-# The Nautobot App Ecosystem
+# Nautobot Community Apps
 
 ## Overview
-
-!!! warning "Developer Note - Remove Me!"
-    An introduction to Nautobot Apps (or Plugins).
 
 To view and search the full list of Apps, head over to the [Nautobot App Ecosystem Page on networktocode.com](https://www.networktocode.com/nautobot/apps/).
 
