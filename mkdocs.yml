@@ -46,7 +46,7 @@ extra_css:
 # jquery to be loaded by RTD conditionally - remove once merged
 # https://github.com/readthedocs/readthedocs.org/pull/9359
 extra_javascript:
-    - assets/jquery-3.6.0.min.js
+    - https://code.jquery.com/jquery-3.6.0.min.js
 
 extra:
     generator: false
