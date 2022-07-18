@@ -36,7 +36,7 @@
             --bs-blue: #0097ff;
             --bs-orange: #ff8504;
             --bs-primary-rgb: rgb(0, 151, 255);
-            --bs-dark-rgb: 0, 0, 0;
+            --bs-dark-rgb: 37, 37, 37;
         }
 
         .nav {
@@ -45,30 +45,34 @@
         }
 
         footer {
-            --bs-heading-color: var(--bs-gray-200);
-            --bs-body-color: var(--bs-gray-200);
+            --bs-heading-color: #2c9cd4;
+            --bs-body-color: var(--bs-gray-100);
         }
 
     </style>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-            <a href="/" class="navbar-brand">
-                <img src="assets/img/nautobot_logo.png" alt="" height="24" class="d-inline-block align-text-top">
-                <span class="fs-5 text">Documentation</span>
-            </a>
-
+            <div class="navbar-brand">
+                <h1 class="align-text-center">
+                    <a href="/" class="nav-link link-light">
+                        <img src="assets/img/nautobot_logo.png" alt="Nautobot Logo" height="40" class=""><span
+                            class="fs-2 ms-2">Documentation</span>
+                    </a>
+                </h1>
+            </div>
             <ul class="nav">
                 <li class="nav-item"><a target="_blank" href="https://blog.networktocode.com/blog/tags/nautobot"
                         class="nav-link">Blog</a></li>
                 <li class="nav-item"><a target="_blank"
-                        href="https://www.youtube.com/channel/UCwBh-dDdoqzxXKyvTw3BuTw/playlists"
+                        href="https://www.youtube.com/playlist?list=PLjA0bhxgryJ2Ts4GJMDA-tPzVWEncv4pb"
                         class="nav-link">Videos</a></li>
-                <li class="nav-item"><a target="_blank" href="https://www.networktocode.com/academy/"
-                        class="nav-link">Training</a></li>
+                <li class="nav-item"><a target="_blank"
+                        href="https://www.networktocode.com/academy/enterprise/package-4/" class="nav-link">Training</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -116,15 +120,16 @@
                             <li class="list-group-item"><a
                                     href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/release-notes/"
                                     class="link-dark">Release Notes</a></li>
+                            <li class="list-group-item"><a href="https://nautobot-ansible.readthedocs.io/en/latest/#"
+                                    class="link-dark">Nautobot Ansible Collection</a><span
+                                    class="badge text-bg-dark rounded-pill ms-1">Ansible</span></li>
+                            <li class="list-group-item"><a href="https://pynautobot.readthedocs.io/en/latest/index.html"
+                                    class="link-dark">Python Library: pynautobot</a><span
+                                    class="badge text-bg-dark rounded-pill ms-1">SDK</span></li>
                             <li class="list-group-item"><a
-                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/rest-api/overview/"
-                                    class="link-dark">Nautobot Ansible Collection</a></li>
-                            <li class="list-group-item"><a
-                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/development/"
-                                    class="link-dark">Python SDK: pynautobot</a></li>
-                            <li class="list-group-item"><a
-                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/release-notes/"
-                                    class="link-dark">Nautobot Helm Charts</a></li>
+                                    href="https://github.com/nautobot/helm-charts"
+                                    class="link-dark">Nautobot Helm Charts</a><span
+                                    class="badge text-bg-dark rounded-pill ms-1">K8s</span></li>
                         </ul>
                     </div>
                 </div>
@@ -160,22 +165,21 @@
                                     class="link-dark">Nautobot Device Onboarding</a><span
                                     class="badge text-bg-dark rounded-pill ms-1">App</span></li>
                             <li class="list-group-item"><a
-                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/"
+                                    href="#"
                                     class="link-dark">Nautobot Single Source of Truth (SSoT)</a><span
                                     class="badge text-bg-dark rounded-pill ms-1">App</span></li>
                             <li class="list-group-item"><a
-                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/"
+                                    href="#"
                                     class="link-dark">Nautobot Device Lifecycle Management</a><span
                                     class="badge text-bg-dark rounded-pill ms-1">App</span></li>
                             <li class="list-group-item"><a
-                                    href="https://nbatest-ml.readthedocs.io/projects/device-onboarding/en/latest/"
+                                    href="#"
                                     class="link-dark">Nautobot Firewall
                                     Models</a><span class="badge text-bg-dark rounded-pill ms-1">App</span></li>
                             <li class="list-group-item"><a
-                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/"
+                                    href="#"
                                     class="link-dark">Nautobot ChatOps</a><span
                                     class="badge text-bg-dark rounded-pill ms-1">App</span></li>
-
                         </ul>
                     </div>
                 </div>
@@ -183,43 +187,63 @@
         </main>
     </div>
 
-    <footer class="pt-4 bg-dark">
+
+    <footer class="pt-4 mt-auto bg-dark">
         <div class="container">
-            <div class="row jsustify-content-center">
-                <div class="col-4 offset-2">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-12">
+                    <h5>Sponsored by:</h5>
+                    <p><img src="assets/img/networktocode_bw.png" alt="" height="40"
+                            class="d-inline-block align-text-center">
+                    </p>
+                    <p class="text-light h4">
+                        <a href="mailto:info@networktocode.com" class="link-light"><i
+                                class="bi bi-envelope-fill"></i></a>
+                        <a href="https://blog.networktocode.com/blog/feed.xml" class="link-light"><i
+                                class="bi bi-rss-fill"></i></a>
+                        <a href="https://www.linkedin.com/company/network-to-code/" class="link-light"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/networktocode" class="link-light"><i class="bi bi-github"></i></a>
+                        <a href="https://twitter.com/networktocode" class="link-light"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.youtube.com/playlist?list=PLjA0bhxgryJ2Ts4GJMDA-tPzVWEncv4pb"
+                            class="link-light"><i class="bi bi-youtube"></i></a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-6">
                     <h5>Community</h5>
                     <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Slack</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">GitHub</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Nautobot Blogs</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Videos</a></li>
+                        <li class="mb-1"><a class="link-light text-decoration-none"
+                                href="https://www.networktocode.com/nautobot/sandbox-environments/">Nautobot
+                                Sandboxes</a></li>
+                        <li class="mb-1"><a class="link-light text-decoration-none"
+                                href="https://www.networktocode.com/community/">Slack</a></li>
+                        <li class="mb-1"><a class="link-light text-decoration-none"
+                                href="https://github.com/nautobot">GitHub</a></li>
+                        <li class="mb-1"><a class="link-light text-decoration-none"
+                                href="https://blog.networktocode.com/blog/tags/nautobot">Nautobot Blogs</a></li>
+                        <li class="mb-1"><a class="link-light text-decoration-none"
+                                href="https://www.youtube.com/playlist?list=PLjA0bhxgryJ2Ts4GJMDA-tPzVWEncv4pb">Nautobot
+                                Videos</a></li>
                     </ul>
                 </div>
-                <div class="col-4 offset-2">
+                <div class="col-md-3 col-6">
                     <h5>Products</h5>
                     <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Nautobot Support</a>
+                        <li class="mb-1"><a class="link-light text-decoration-none"
+                                href="https://www.networktocode.com/services/support/">Nautobot Support</a>
                         </li>
-                        <li class="mb-1"><a target="_blank" href="https://www.networktocode.com/managed-netdevops/"
-                                class="link-secondary text-decoration-none">Nautobot Managed Services</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Nautobot Cloud</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Nautobot Training</a>
+                        <li class="mb-1"><a target="_blank"
+                                href="https://www.networktocode.com/nautobot-cloud-managed-services/"
+                                class="link-light text-decoration-none">Nautobot Managed Services</a></li>
+                        <li class="mb-1"><a class="link-light text-decoration-none" href="#">Nautobot Cloud</a></li>
+                        <li class="mb-1"><a class="link-light text-decoration-none"
+                                href="https://www.networktocode.com/academy/enterprise/package-4/">Nautobot Training</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-6 text-center text-white">
-                    Sponsored by<img src="assets/img/networktocode_logo.png" alt="" height="30"
-                        class="d-inline-block align-text-center mb-1 ms-2">
                 </div>
             </div>
         </div>
     </footer>
-
-
-
-
 </body>
 
 </html>
