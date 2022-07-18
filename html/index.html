@@ -31,32 +31,55 @@
         .main-header {
             max-width: 700px;
         }
+
+        :root {
+            --bs-blue: #0097ff;
+            --bs-orange: #ff8504;
+            --bs-primary-rgb: rgb(0, 151, 255);
+            --bs-dark-rgb: 0, 0, 0;
+        }
+
+        .nav {
+            --bs-nav-link-color: var(--bs-white);
+            --bs-nav-link-hover-color: var(--bs-orange);
+        }
+
+        footer {
+            --bs-heading-color: var(--bs-gray-200);
+            --bs-body-color: var(--bs-gray-200);
+        }
+
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <img src="assets/img/nautobot_logo.png" alt="" height="24" class="bi me-2">
-                <span class="fs-5">Documentation</span>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="assets/img/nautobot_logo.png" alt="" height="24" class="d-inline-block align-text-top">
+                <span class="fs-5 text">Documentation</span>
             </a>
 
             <ul class="nav">
-                <li class="nav-item"><a target="_blank" href="https://blog.networktocode.com/blog/tags/nautobot" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a target="_blank" href="https://www.youtube.com/channel/UCwBh-dDdoqzxXKyvTw3BuTw/playlists" class="nav-link">Videos</a></li>
-                <li class="nav-item"><a target="_blank" href="https://www.networktocode.com/academy/" class="nav-link">Training</a></li>
+                <li class="nav-item"><a target="_blank" href="https://blog.networktocode.com/blog/tags/nautobot"
+                        class="nav-link">Blog</a></li>
+                <li class="nav-item"><a target="_blank"
+                        href="https://www.youtube.com/channel/UCwBh-dDdoqzxXKyvTw3BuTw/playlists"
+                        class="nav-link">Videos</a></li>
+                <li class="nav-item"><a target="_blank" href="https://www.networktocode.com/academy/"
+                        class="nav-link">Training</a></li>
             </ul>
-        </header>
-    </div>
+        </div>
+    </nav>
 
     <div class="container py-3">
         <header>
-             <div class="main-header p-3 pb-md-4 mx-auto text-center">
+            <div class="main-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-normal">Nautobot Documentation</h1>
-                <p class="fs-5 text-muted">Nautobot is an extensible and flexible Network Source of Truth and Network Automation Platform that is the cornerstone
-                of any network automation architecture.</p>
+                <p class="fs-5 text-muted">Nautobot is an extensible and flexible Network Source of Truth and Network
+                    Automation Platform that is the cornerstone
+                    of any network automation architecture.</p>
             </div>
         </header>
 
@@ -68,16 +91,40 @@
                             <h2 class="my-0 fw-semibold">Nautobot Core</h4>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">The main platform documentation - how to install, configure, manage, and extend Nautobot.</p>
+                            <p class="card-text">The main platform documentation - how to install, configure, manage,
+                                and extend Nautobot.</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/" class="w-100 btn btn-lg btn-primary" target="_blank">To the Core Docs!</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/installation/" class="link-dark">Installation Guide</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/docker/" class="link-dark">Nautobot in Docker</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/user-guides/getting-started/" class="link-dark">Getting Started Guide</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/rest-api/overview/" class="link-dark">REST API Overview</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/development/" class="link-dark">Nautobot Development Guide</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/release-notes/" class="link-dark">Release Notes</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/"
+                                    class="w-100 btn btn-lg btn-primary" target="_blank">To the Core Docs!</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/installation/"
+                                    class="link-dark">Installation Guide</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/user-guides/getting-started/"
+                                    class="link-dark">Getting Started Guide</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/docker/"
+                                    class="link-dark">Nautobot Docker Images</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/rest-api/overview/"
+                                    class="link-dark">REST API Overview</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/development/"
+                                    class="link-dark">Nautobot Development Guide</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/release-notes/"
+                                    class="link-dark">Release Notes</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/rest-api/overview/"
+                                    class="link-dark">Nautobot Ansible Collection</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/development/"
+                                    class="link-dark">Python SDK: pynautobot</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/release-notes/"
+                                    class="link-dark">Nautobot Helm Charts</a></li>
                         </ul>
                     </div>
                 </div>
@@ -87,52 +134,88 @@
                             <h2 class="my-0 fw-semibold">Nautobot Apps</h4>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Documentation portal for Nautobot Apps, with dedicated sections for Usage, Administration, and Development of each App.</p>
+                            <p class="card-text">Documentation portal for Nautobot Apps, with dedicated sections for
+                                Usage, Administration, and Development of each App.</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/" class="w-100 btn btn-lg btn-warning" target="_blank">To the App Docs!</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/golden-config/en/latest/" class="link-dark">Nautobot Golden Configuration</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/device-onboarding/en/latest/" class="link-dark">Nautobot Device Onboarding</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/" class="link-dark">Nautobot Single Source of Truth (SSoT)</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/" class="link-dark">Nautobot Device Lifecycle Management</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/nautobot-apps/" class="link-dark">Nautobot Community Apps</a></li>
-                            <li class="list-group-item"><a href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/plugins/development/" class="link-dark">Developing Nautobot Apps (Plugins)</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/"
+                                    class="w-100 btn btn-lg btn-warning" target="_blank">To the App Docs!</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/nautobot-apps/"
+                                    class="link-dark">All Nautobot Apps</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/"
+                                    class="link-dark">Nautobot Community Apps</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/plugins/development/"
+                                    class="link-dark">Using & Developing Nautobot Apps (Plugins)</a></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/golden-config/en/latest/"
+                                    class="link-dark">Nautobot Golden Configuration</a><span
+                                    class="badge text-bg-dark rounded-pill ms-1">App</span></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/device-onboarding/en/latest/"
+                                    class="link-dark">Nautobot Device Onboarding</a><span
+                                    class="badge text-bg-dark rounded-pill ms-1">App</span></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/"
+                                    class="link-dark">Nautobot Single Source of Truth (SSoT)</a><span
+                                    class="badge text-bg-dark rounded-pill ms-1">App</span></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/"
+                                    class="link-dark">Nautobot Device Lifecycle Management</a><span
+                                    class="badge text-bg-dark rounded-pill ms-1">App</span></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/device-onboarding/en/latest/"
+                                    class="link-dark">Nautobot Firewall
+                                    Models</a><span class="badge text-bg-dark rounded-pill ms-1">App</span></li>
+                            <li class="list-group-item"><a
+                                    href="https://nbatest-ml.readthedocs.io/projects/core/en/latest/apps/"
+                                    class="link-dark">Nautobot ChatOps</a><span
+                                    class="badge text-bg-dark rounded-pill ms-1">App</span></li>
+
                         </ul>
                     </div>
                 </div>
             </div>
         </main>
+    </div>
 
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
-            <div class="row">
-                <div class="col-12 col-md">
-                    <img class="mb-2" src="assets/img/networktocode_logo.png" alt="" height="30">
-                    <small class="d-block mb-3 text-muted">&copy; Network To Code LLC</small>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Contact Us</h5>
+    <footer class="pt-4 bg-dark">
+        <div class="container">
+            <div class="row jsustify-content-center">
+                <div class="col-4 offset-2">
+                    <h5>Community</h5>
                     <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a target="_blank" href="https://www.networktocode.com/managed-netdevops/" class="link-secondary text-decoration-none">Managed Services</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Other</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Useful</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Details</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Slack</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">GitHub</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Nautobot Blogs</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Videos</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md">
-                    <h5>Resources</h5>
+                <div class="col-4 offset-2">
+                    <h5>Products</h5>
                     <ul class="list-unstyled text-small">
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
-                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Nautobot Support</a>
+                        </li>
+                        <li class="mb-1"><a target="_blank" href="https://www.networktocode.com/managed-netdevops/"
+                                class="link-secondary text-decoration-none">Nautobot Managed Services</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Nautobot Cloud</a></li>
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Nautobot Training</a>
+                        </li>
                     </ul>
-                </div>
-                <div class="col-6 col-md">
-                    <h5>Newsletter</h5>
                 </div>
             </div>
-        </footer>
-    </div>
+            <div class="row justify-content-center">
+                <div class="col-6 text-center text-white">
+                    Sponsored by<img src="assets/img/networktocode_logo.png" alt="" height="30"
+                        class="d-inline-block align-text-center mb-1 ms-2">
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
 
