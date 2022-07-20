@@ -2,8 +2,9 @@ dev_addr: '10.250.0.11:8000'
 edit_uri: edit/main/nautobot/docs
 site_dir: nautobot/project-static/docs
 site_name: Nautobot Documentation
-site_url: https://nautobot.readthedocs.io/
+site_url: https://nbatest-ml.readthedocs.io/projects/core/
 repo_url: https://github.com/nautobot/nautobot
+copyright: Copyright &copy; 2022 The Authors
 theme:
     name: material
     navigation_depth: 4
@@ -181,3 +182,4 @@ nav:
             - Nautobot Device Onboarding: 'https://nbatest-mm.readthedocs.io/projects/device-onboarding/en/latest/'
             - Nautobot Golden Configuration: 'https://nbatest-mm.readthedocs.io/projects/golden-config/en/latest/'
         - Community Apps: 'apps/nautobot-apps.md'
+    - Nautobot Docs Home ↗︎: 'https://nbatest-ml.readthedocs.io/'

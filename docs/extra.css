@@ -35,3 +35,17 @@
 img.logo {
     height: 100px;
 }
+
+img.copyright-logo {
+    height: 22px;
+    vertical-align: middle;
+}
+
+[data-md-color-primary=black] .md-header {
+    background-color: #212121;
+}
+@media screen and (min-width: 76.25em) {
+    [data-md-color-primary=black] .md-tabs {
+        background-color: #212121;
+    }
+}
