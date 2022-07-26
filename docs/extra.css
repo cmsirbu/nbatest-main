@@ -1,4 +1,4 @@
-:root > * {
+:root>* {
     --md-accent-fg-color: #ff8504;
     --md-primary-fg-color: #ff8504;
     --md-typeset-a-color: #0097ff;
@@ -9,15 +9,25 @@
     --md-typeset-a-color: #0097ff;
 }
 
-/* [data-md-color-scheme="slate"] */ .md-typeset {
+/* Accessibility: Increase fonts for dark theme */
+[data-md-color-scheme="slate"] .md-typeset {
     font-size: 0.9rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+    font-size: 0.7rem;
 }
 
 .md-tabs__link {
     font-size: 0.8rem;
 }
+
 .md-tabs__link--active {
     color: var(--md-primary-fg-color);
+}
+
+.md-header__button.md-logo :is(img, svg) {
+    height: 2rem;
 }
 
 .md-header__button.md-logo :-webkit-any(img, svg) {
@@ -26,10 +36,6 @@
 
 .md-header__title {
     font-size: 1.2rem;
-}
-
-.md-typeset table:not([class]) {
-    font-size: 0.7rem;
 }
 
 img.logo {
@@ -44,6 +50,7 @@ img.copyright-logo {
 [data-md-color-primary=black] .md-header {
     background-color: #212121;
 }
+
 @media screen and (min-width: 76.25em) {
     [data-md-color-primary=black] .md-tabs {
         background-color: #212121;
