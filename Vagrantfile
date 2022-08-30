@@ -1,0 +1,21 @@
+# vi: set ft=ruby :
+# https://docs.vagrantup.com
+
+Vagrant.configure("2") do |config|
+  # https://github.com/cmsirbu/ants
+  config.vm.box = "cmsirbu/ants"
+
+  # private management network for devices to connect to (assign .1 to host machine)
+  # this should be vboxnet0 if you wish to interconnect to devices from examples/lab-vagrant
+  config.vm.network 'private_network', ip: "10.250.0.12", netmask: 24
+
+  # 1024 is default, modify as needed
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "8192"
+  end
+
+  # example provisioner for adding more packages
+  # config.vm.provision "shell", privileged: false, inline: <<-SHELL
+  #   pip3 install -U --user -r /vagrant/requirements.txt
+  # SHELL
+end
