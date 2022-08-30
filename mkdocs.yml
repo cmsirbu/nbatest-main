@@ -4,7 +4,7 @@ dev_addr: "10.250.0.11:8000"
 edit_uri: "edit/main/nautobot/docs"
 site_dir: "nautobot/project-static/docs"
 site_name: "Nautobot Documentation"
-site_url: "https://nbatest-ml.readthedocs.io/projects/core/"
+site_url: "https://nautobot.readthedocs.io/"
 # TODO: replace when switching domain
 # site_url: "https://docs.nautobot.com/projects/core/"
 repo_url: "https://github.com/nautobot/nautobot"
