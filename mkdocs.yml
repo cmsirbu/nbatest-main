@@ -46,8 +46,8 @@ extra_css:
 # needed for RTD version flyout menu
 # jquery to be loaded by RTD conditionally - remove once merged
 # https://github.com/readthedocs/readthedocs.org/pull/9359
-# extra_javascript:
-#   - "https://code.jquery.com/jquery-3.6.0.min.js"
+extra_javascript:
+  - "https://code.jquery.com/jquery-3.6.0.min.js"
 
 extra:
   generator: false
