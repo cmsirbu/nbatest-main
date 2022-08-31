@@ -3,7 +3,7 @@ dev_addr: "127.0.0.1:8001"
 edit_uri: "edit/main/nautobot/docs"
 site_dir: "nautobot/project-static/docs"
 site_name: "Nautobot Documentation"
-site_url: "https://nautobot.readthedocs.io/"
+site_url: "https://nbatest-ml.readthedocs.io/projects/core/"
 # TODO: replace when switching domain
 # site_url: "https://docs.nautobot.com/projects/core/"
 repo_url: "https://github.com/nautobot/nautobot"
@@ -46,8 +46,8 @@ extra_css:
 # needed for RTD version flyout menu
 # jquery to be loaded by RTD conditionally - remove once merged
 # https://github.com/readthedocs/readthedocs.org/pull/9359
-extra_javascript:
-  - "https://code.jquery.com/jquery-3.6.0.min.js"
+# extra_javascript:
+#   - "https://code.jquery.com/jquery-3.6.0.min.js"
 
 extra:
   generator: false
